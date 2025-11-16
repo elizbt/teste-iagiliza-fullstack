@@ -14,7 +14,7 @@ app.register(jwt, {
   secret: process.env.JWT_SECRET || 'fallback-secret-mude-no-env',
 })
 
-app.register(authRoutes, { prefix: '/api' })
+app.register(authRoutes, { prefix: '/auth' })
 app.register(userRoutes, { prefix: '/api' })
 app.register(chatRoutes, { prefix: '/api' })
 

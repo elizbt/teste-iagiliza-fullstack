@@ -41,7 +41,7 @@ export default function RegisterForm() {
 
 
     return (
-        <section className="bg-[#F3F4FB] w-full min-h-screen flex items-center justify-center p-4">
+        <section className="bg-[#F8FAFC] w-full min-h-screen flex items-center justify-center p-4">
             <Card className="w-full max-w-md p-8 shadow-2xl rounded-xl sm:px-6">
                 <CardHeader className="text-center space-y-2">
                     <CardTitle className="text-3xl font-bold text-gray-900">AgiliChat</CardTitle>

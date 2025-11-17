@@ -10,7 +10,7 @@ import { Loader2 } from 'lucide-react'
 import { useRouter } from 'next/navigation' 
 
 export default function LoginForm() {
-    
+
     const router = useRouter()
 
     const [email, setEmail] = useState('')
@@ -29,6 +29,7 @@ export default function LoginForm() {
             const response = await fetchWrapper('/login', data)
 
             localStorage.setItem('agilichat-token', response.token)
+            localStorage.setItem('agilichat-user-email', data.email)
 
             router.push('/chat')
             
@@ -41,7 +42,7 @@ export default function LoginForm() {
     }, [email, password])
 
     return (
-        <section className="bg-[#F3F4FB] w-full min-h-screen flex items-center justify-center p-4">
+        <section className="bg-[#F8FAFC] w-full min-h-screen flex items-center justify-center p-4">
     
             <Card className="w-full max-w-sm md:max-w-md py-10 px-6 shadow-2xl rounded-xl">
                 <CardHeader className="text-center space-y-2 pt-0 pb-6">

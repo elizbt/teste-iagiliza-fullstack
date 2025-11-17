@@ -44,7 +44,11 @@ export default function RegisterForm() {
         <section className="bg-[#F8FAFC] w-full min-h-screen flex items-center justify-center p-4">
             <Card className="w-full max-w-md p-8 shadow-2xl rounded-xl sm:px-6">
                 <CardHeader className="text-center space-y-2">
-                    <CardTitle className="text-3xl font-bold text-gray-900">AgiliChat</CardTitle>
+                        <Link href="/" className="block">
+                                <CardTitle className="text-3xl font-bold text-gray-900 cursor-pointer hover:opacity-80 transition">
+                                AgiliChat
+                                </CardTitle>
+                        </Link>
                     <p className="text-gray-600 text-lg font-medium">Crie sua Conta</p>
                 </CardHeader>
                 

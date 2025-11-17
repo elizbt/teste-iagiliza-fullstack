@@ -9,6 +9,7 @@ import { useState, useCallback } from 'react'
 import { Loader2 } from 'lucide-react'
 import { useRouter } from 'next/navigation' 
 
+
 export default function LoginForm() {
 
     const router = useRouter()
@@ -46,7 +47,12 @@ export default function LoginForm() {
     
             <Card className="w-full max-w-sm md:max-w-md py-10 px-6 shadow-2xl rounded-xl">
                 <CardHeader className="text-center space-y-2 pt-0 pb-6">
-                    <CardTitle className="text-3xl font-bold text-gray-900">AgiliChat</CardTitle>
+                        <Link href="/" className="block">
+                            <CardTitle className="text-3xl font-bold text-gray-900 cursor-pointer hover:opacity-80 transition">
+                            AgiliChat
+                            </CardTitle>
+                        </Link>
+
                     <p className="text-gray-600 text-lg font-medium">Entre na sua Conta</p>
                 </CardHeader>
                 

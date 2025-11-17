@@ -66,7 +66,7 @@ export default function Navbar() {
             className="bg-[#8093F1] text-white rounded-full font-medium hover:bg-[#5C66C0] transition whitespace-nowrap
             min-[820px]:text-sm lg:text-base min-[820px]:px-4 min-[820px]:py-2 lg:px-4 lg:py-2"
           >
-            <Link href="/login">Começar Agora</Link>
+            <Link href="/register">Começar Agora</Link>
           </Button>
         </div>
 
@@ -110,7 +110,7 @@ export default function Navbar() {
           asChild
           className="bg-[#8093F1] text-white px-6 py-2 rounded-full font-medium hover:bg-[#5C66C0] active:bg-[#5C66C0] transition text-center"
         >
-          <Link href="/login" onClick={(): void => setMenuOpen(false)}>
+          <Link href="/register" onClick={(): void => setMenuOpen(false)}>
             Começar Agora
           </Link>
         </Button>
